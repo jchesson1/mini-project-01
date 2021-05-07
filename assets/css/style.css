@@ -1,12 +1,113 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-main{
+body {
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 16px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+header,
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 24px;
+}
+
+nav a {
+    color: white;
+}
+
+h2{
+    margin-bottom: 24px;
+}
+
+figure {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 12px solid darkblue;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+}
+
+figure img{
+    width: 300px;
+    height: auto;
+}
+
+figcaption {
+    background-color: orangered;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.image-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main {
     width: 1024px;
-    margin: 0 auto 1000px;
+    margin: 0 auto;
 }
 
-section{
-    height: 200px;
+section {
+   padding: 24px; 
+}
+
+form {
+    padding: 24px;
+    border: 12px solid darkblue;
+}
+
+label {
+    display: block;
+    margin: 24px;
+    font-size: 24;
+}
+
+label span {
+    width: 80px;
+}
+
+input {
+    padding: 8px;
+    font-size: 20px;
+    border: solid orangered 4px;
+}
+
+button {
+    margin: 24px;
+    color: white;
+    background-color: blue;
+    padding: 12px;
+    font-size: 24;
 }
